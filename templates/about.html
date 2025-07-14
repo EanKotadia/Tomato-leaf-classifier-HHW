@@ -1,0 +1,178 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Tomato Leaf Disease Classifier - Student Project by Ean Kotadia</title>
+<link rel="stylesheet" href="/static/styles.css">
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.add('loaded');
+    });
+</script>
+{% endblock %}
+
+{% block body %}
+<main id="main-content">
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Tomato Leaf Disease Classifier - A Student Experiment</h1>
+            <p>
+                This platform is an experimental project by Ean Kotadia, a Class 10 student exploring how computer
+                vision
+                models can be trained to recognize tomato plant diseases from leaf images.
+            </p>
+            <a href="/assessment" class="primary-button">Try the Classifier Demo</a>
+        </div>
+    </section>
+
+    <section class="section project-introduction">
+        <div class="container">
+            <h2>Project Introduction</h2>
+            <p>
+                The idea behind this project was to learn how machine learning and computer vision techniques can help
+                in
+                early detection of plant diseases. The classifier demonstrates how image data can be processed to
+                generate predictions that assist in identifying common tomato leaf conditions.
+            </p>
+        </div>
+    </section>
+
+    <section class="section capabilities">
+        <div class="container">
+            <h2>Project Features</h2>
+            <div class="features-grid">
+                <article class="feature">
+                    <h3>Image Recognition</h3>
+                    <p>
+                        Trained on example images to classify leaves as Healthy, Early Blight, Late Blight, or Leaf
+                        Mold.
+                    </p>
+                </article>
+                <article class="feature">
+                    <h3>Interactive Predictions</h3>
+                    <p>
+                        Users can upload a photo of a tomato leaf and receive a prediction and confidence score.
+                    </p>
+                </article>
+                <article class="feature">
+                    <h3>Educational Reports</h3>
+                    <p>
+                        Generates simple summaries explaining what the prediction means for plant health.
+                    </p>
+                </article>
+                <article class="feature">
+                    <h3>Browser-Based Deployment</h3>
+                    <p>
+                        Runs entirely in the browser using TensorFlow.js without requiring server infrastructure.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section methodology">
+        <div class="container">
+            <h2>Methodology</h2>
+            <p>
+                The project followed this workflow:
+            </p>
+            <ul>
+                <li>Collected example images of healthy and diseased tomato leaves.</li>
+                <li>Trained a Teachable Machine image classification model.</li>
+                <li>Exported the model to TensorFlow.js format.</li>
+                <li>Developed a simple website to load the model and run predictions.</li>
+            </ul>
+            <p>
+                All steps were carried out as part of an educational science project.
+            </p>
+        </div>
+    </section>
+
+    <section class="section data-integration">
+        <div class="container">
+            <h2>Data and Tools</h2>
+            <p>
+                This project uses:
+            </p>
+            <ul>
+                <li>Example leaf photos collected by the creator and supplemented by public datasets.</li>
+                <li>Teachable Machine for model training.</li>
+                <li>TensorFlow.js for in-browser prediction.</li>
+                <li>HTML, CSS, and JavaScript for the web interface.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section reporting">
+        <div class="container">
+            <h2>Reporting Features</h2>
+            <p>
+                The classifier can generate:
+            </p>
+            <ul>
+                <li>Predicted disease category and probability.</li>
+                <li>Short descriptions of each disease.</li>
+                <li>Downloadable example reports for demonstration purposes.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section future-plans">
+        <div class="container">
+            <h2>Future Plans</h2>
+            <p>
+                In the future, I plan to:
+            </p>
+            <ul>
+                <li>Collect more diverse and higher-quality image samples.</li>
+                <li>Experiment with more advanced model architectures.</li>
+                <li>Improve the user interface and visualization of results.</li>
+                <li>Explore deployment to mobile devices.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section disclaimer">
+        <div class="container">
+            <h2>Disclaimer</h2>
+            <p>
+                This is an experimental educational project. The predictions are not intended for real agricultural
+                decision-making. For professional diagnosis, please consult qualified agronomists.
+            </p>
+        </div>
+    </section>
+
+    <section class="section about-creator">
+        <div class="container">
+            <h2>About the Creator</h2>
+            <p>
+                Hi! I'm Ean Kotadia, a Class 10 student. I created this project to learn about AI, computer vision, and
+                how technology can help address real-world problems.
+            </p>
+            <ul>
+                <li>Email: <a href="mailto:kotadia.ean@gmail.com">kotadia.ean@gmail.com</a></li>
+                <li>Location: India</li>
+                <li>Interests: Machine Learning, Data Science, Web Development</li>
+            </ul>
+            <h3>Connect with me</h3>
+            <ul>
+                <li><a href="https://github.com/EanKotadia" target="_blank">GitHub</a></li>
+                <li><a href="https://www.behance.net/eankotadia" target="_blank">Behance</a></li>
+                <li><a href="https://www.youtube.com/@ean_kotadia" target="_blank">YouTube</a></li>
+                <li><a href="https://devpost.com/EanKotadia" target="_blank">Devpost</a></li>
+                <li><a href="https://www.linkedin.com/in/ean-kotadia-7a2b0821a/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section contact-cta">
+        <div class="container">
+            <h2>Stay Connected</h2>
+            <p>
+                If you'd like to share feedback, suggest improvements, or follow my progress, feel free to reach out or
+                explore my profiles.
+            </p>
+            <a href="mailto:kotadia.ean@gmail.com" class="primary-button">Contact Me</a>
+        </div>
+    </section>
+</main>
+{% endblock %}

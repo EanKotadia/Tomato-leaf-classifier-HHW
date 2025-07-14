@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Tomato Leaf Disease Classifier</title>
+<meta name="description" content="AI-powered tomato plant disease recognition project by Ean Kotadia, Class 10 E.">
+<meta property="og:title" content="Tomato Leaf Disease Classifier">
+<meta property="og:description"
+    content="A science project demonstrating computer vision for early detection of tomato plant diseases.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="/static/styles.css">
+{% endblock %}
+
+{% block body %}
+<main id="main-content" aria-label="Main content">
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-content">
+            <h1 id="hero-title">Tomato Leaf Disease Classifier</h1>
+            <p>
+                This project showcases an AI-powered image recognition system for identifying common tomato leaf
+                diseases.
+                Developed by <strong>Ean Kotadia</strong>, Class 10 E, as part of the Science Summer Vacation Homework.
+            </p>
+        </div>
+    </section>
+
+    <section class="section project-overview" aria-labelledby="overview-heading">
+        <div class="container">
+            <h2 id="overview-heading">Project Overview</h2>
+            <p>
+                The classifier was trained using Teachable Machine and distinguishes between healthy leaves and common
+                diseases,
+                including Early Blight, Late Blight, and Leaf Mold.
+            </p>
+            <p>
+                This project demonstrates how computer vision and machine learning can support agriculture by enabling
+                early detection of plant health issues.
+            </p>
+        </div>
+    </section>
+
+    <section class="section demo" aria-labelledby="demo-heading">
+        <div class="container">
+            <h2 id="demo-heading">Try the Classifier</h2>
+            <p>Upload a photo of a tomato leaf to see the prediction:</p>
+            <button
+                style="padding: 0.75rem 1.5rem; font-size: 1rem; border: none; border-radius: 4px; background-color: #4CAF50; color: white; cursor: pointer;"
+                onclick="window.location.href='/main'">
+                Go to Main Page
+            </button>
+
+        </div>
+        <div style="margin-top: 20px; text-align: center;">
+            <a style="padding: 0.75rem 1.5rem; font-size: 1rem; background-color: #4CAF50; color: white;"
+                href="https://teachablemachine.withgoogle.com/models/WZC3cVtAX/">Model-Link</a>
+        </div>
+
+    </section>
+
+    <section class="section project-details" aria-labelledby="details-heading">
+        <div class="container">
+            <h2 id="details-heading">How It Works</h2>
+            <ul class="feature-list">
+                <li>Step 1: Collect images of healthy and diseased leaves.</li>
+                <li>Step 2: Train an image classification model with Teachable Machine.</li>
+                <li>Step 3: Export or link the trained model for use in this web interface.</li>
+                <li>Step 4: Use TensorFlow.js to run predictions directly in your browser.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section about-author" aria-labelledby="author-heading">
+        <div class="container">
+            <h2 id="author-heading">About the Author</h2>
+            <p>
+                This project was created independently by <strong>Ean Kotadia</strong>, a student in Class 10 E, to
+                explore the intersection of science, technology, and agriculture.
+            </p>
+            <p>
+                You can view the project code and model resources on GitHub.
+            </p>
+            <a href="https://github.com/EanKotadia/tomato-leaf-classifier" class="secondary-button">View on GitHub</a>
+        </div>
+    </section>
+
+    <section class="section disclaimer" aria-labelledby="disclaimer-heading">
+        <div class="container">
+            <h2 id="disclaimer-heading">Disclaimer</h2>
+            <p>
+                This project is for educational purposes only. The model is a demonstration and may not achieve
+                production-level accuracy.
+            </p>
+        </div>
+    </section>
+</main>
+{% endblock %}

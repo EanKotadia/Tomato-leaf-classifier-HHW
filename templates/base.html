@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomato Leaf Disease Classifier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+
+    {% block head %}{% endblock %}
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="/" class="logo" aria-label="Tomato Classifier Home">TomatoAI</a>
+            <nav aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/documentation">Documentation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" aria-label="Main content">
+        {% block body %}{% endblock %}
+    </main>
+
+    <footer class="footer" aria-label="Footer">
+        <div class="container footer-content">
+            <nav aria-label="Footer navigation">
+                <ul class="footer-links">
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/disclaimer">Disclaimer</a></li>
+                </ul>
+            </nav>
+            <div class="footer-profiles" style="margin-top: 1rem;">
+                <h3
+                    style="font-size:1rem;margin-bottom:0.75rem;color:white;font-weight:600;border-bottom:1px solid rgba(255,255,255,0.3);padding-bottom:0.25rem;text-align:center;">
+                    Connect With Me
+                </h3>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-wrap:wrap; gap:0.75rem;">
+                    <li><a href="https://github.com/EanKotadia" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://www.behance.net/eankotadia" target="_blank" rel="noopener">Behance</a></li>
+                    <li><a href="https://www.youtube.com/@ean_kotadia" target="_blank" rel="noopener">YouTube</a></li>
+                    <li><a href="https://devpost.com/EanKotadia" target="_blank" rel="noopener">Devpost</a></li>
+                    <li><a href="https://www.linkedin.com/in/ean-kotadia-7a2b0821a/" target="_blank"
+                            rel="noopener">LinkedIn</a></li>
+                    <li><a href="mailto:kotadia.ean@gmail.com">Email</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                © 2025 Ean Kotadia - Tomato Leaf Disease Classifier Project. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
