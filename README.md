@@ -60,12 +60,6 @@ Alternatively, the model is also embedded in the main project webpage.
 
 ---
 
-## Screenshots
-
-*(You can add screenshots here by uploading images and linking them)*
-
----
-
 ## About the Author
 
 **Ean Kotadia**  
